@@ -2,11 +2,9 @@
 
 return
 [
-	'disallow' =>
-	[
-		'*' =>
-		[
-			'/excluded'
-		]
-	]
+    'disallow' => [
+        '*' => [
+            '/excluded',
+        ],
+    ],
 ];
