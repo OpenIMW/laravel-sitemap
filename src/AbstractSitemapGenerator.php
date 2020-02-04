@@ -5,15 +5,12 @@ use IMW\LaravelSitemap\Contracts\SitemapGenerator;
 
 abstract class AbstractSitemapGenerator implements SitemapGenerator
 {
+	use Traits\SitemapGeneratorTrait;
 
-	# Images in sitemap file
-	protected $images = false;
-
-	# Videos in sitemap file
-	protected $videos = false;
-
-	# Sitemap name
-	protected $name = 'example.xml';
+	final public function __construct()
+	{
+		$this->initSitemap();
+	}
 
 	/**
 	 * Generate files
@@ -22,4 +19,3 @@ abstract class AbstractSitemapGenerator implements SitemapGenerator
 	 */
 	abstract public function generate(): void;
 }
-
