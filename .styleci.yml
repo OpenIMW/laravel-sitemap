@@ -1,6 +1,7 @@
 preset: recommended
 risky: true
 use-tabs: true
+tab-width: 4
 finder:
     exclude:
         - vendor
