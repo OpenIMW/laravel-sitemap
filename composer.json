@@ -1,6 +1,6 @@
 {
-	"name": "imw/laravel-meta",
-	"description": "SEO package for laravel.",
+	"name": "imw/laravel-sitemap",
+	"description": "Sitemap builder for laravel.",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
