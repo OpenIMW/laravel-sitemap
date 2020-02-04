@@ -1,7 +1,9 @@
 preset: recommended
 risky: true
-use-tabs: false
+use-tabs: true
 tab-width: 4
+disabled:
+    - indentation
 finder:
     exclude:
         - vendor
