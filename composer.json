@@ -1,0 +1,54 @@
+{
+	"name": "imw/laravel-meta",
+	"description": "SEO package for laravel.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mohamed Elbahja",
+			"email": "bm9qdw5r@gmail.com"
+		}
+	],
+	"require":
+	{
+		"php": ">=7.2",
+		"laravel/framework": "~5.8.0|^6.0"
+	},
+	"require-dev":
+	{
+		"orchestra/testbench": "^4.0",
+		"phpunit/phpunit": "^8.0"
+	},
+	"autoload-dev":
+	{
+		"psr-4":
+		{
+			"IMW\\LaravelSitemap\\Test\\": "tests/"
+		}
+	},
+	"autoload":
+	{
+		"psr-4":
+		{
+			"IMW\\LaravelSitemap\\": "src/"
+		}
+	},
+	"config":
+	{
+		"sort-packages": true
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"extra":
+	{
+		"laravel":
+		{
+			"providers": [
+				"IMW\\LaravelSitemap\\SitemapServiceProvider"
+			]
+		}
+	},
+	"scripts": {
+		"test": "vendor/bin/phpunit --testdox"
+	}
+}

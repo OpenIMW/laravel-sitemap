@@ -1,0 +1,13 @@
+<?php
+namespace App\Sitemap;
+
+use IMW\LaravelSitemap\AbstractMetaGenerator;
+
+class {name} extends AbstractMetaGenerator
+{
+
+	public function generate(): void
+	{
+
+	}
+}
