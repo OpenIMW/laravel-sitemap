@@ -1,8 +1,7 @@
 <?php
-namespace IMW\LaravelSitemap;
 
+namespace IMW\LaravelSitemap;
 
 class SitemapException extends \Exception
 {
-
 }
