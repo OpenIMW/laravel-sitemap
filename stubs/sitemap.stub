@@ -1,9 +1,9 @@
 <?php
 namespace App\Sitemap;
 
-use IMW\LaravelSitemap\AbstractMetaGenerator;
+use IMW\LaravelSitemap\AbstractSitemapGenerator;
 
-class {name} extends AbstractMetaGenerator
+class {name} extends AbstractSitemapGenerator
 {
 
 	public function generate(): void
