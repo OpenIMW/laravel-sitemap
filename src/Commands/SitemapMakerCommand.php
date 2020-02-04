@@ -3,7 +3,7 @@ namespace IMW\LaravelSitemap\Commands;
 
 use Illuminate\Console\Command;
 
-class MetaMakerCommand extends Command
+class SitemapMakerCommand extends Command
 {
     /**
      * The name and signature of the console command.
