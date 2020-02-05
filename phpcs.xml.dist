@@ -2,4 +2,6 @@
 <ruleset>
 	<rule ref="ruleset.xml"></rule>
 	<file>src</file>
+	<file>routes</file>
+	<file>config</file>
 </ruleset>
