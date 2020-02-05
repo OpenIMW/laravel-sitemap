@@ -15,3 +15,6 @@ jobs:
 
     - name: PHP tests
       run: composer test
+
+    - name: PHP lint checker
+      run: composer lint

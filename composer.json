@@ -50,6 +50,7 @@
 		}
 	},
 	"scripts": {
-		"test": "vendor/bin/phpunit --testdox"
+		"test": "vendor/bin/phpunit --testdox",
+		"lint": "vendor/bin/phpcs"
 	}
 }
