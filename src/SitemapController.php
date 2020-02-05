@@ -31,5 +31,16 @@ class SitemapController
 	 */
 	public function robots()
 	{
+		$index = str_replace('{name}', config('sitemap.index_name'), config('sitemap.route'));
+		$appUrl = config('app.url');
+		$agents = config('robots');
+		$content = "Sitemap: {$appUrl}{$index}";
+
+		foreach ($agents as $agent) {
+			$content .= "\n\nUser-agent: {$agent['name']}\n";
+			$content .= implode(PHP_EOL, $agent['rules']);
+		}
+
+		return response($content)->header('content-type', 'text/plain; charset=utf-8');
 	}
 }
